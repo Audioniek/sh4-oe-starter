@@ -15,7 +15,7 @@ SCRIPTPATH="$(cd "$(dirname "$0")"; pwd -P)"
 git config --global core.autocrlf input
 echo "Cloning openpli-oe-core"
 git clone --progress --quiet --branch develop https://github.com/OpenPLi/openpli-oe-core $REPONAME
-cd ./$REPONAME
+cd $REPONAME
 
 echo "Removing non-SH4 submodules"
 metas='meta-amiko meta-edision meta-gi meta-miraclebox meta-qt5 meta-spycat meta-xpeedc meta-zgemma meta-axasuhd meta-formuler meta-gigablue meta-qviart meta-vuplus meta-xsarius.pli5 meta-dream meta-gfutures meta-sab meta-xp meta-xtrend'
@@ -103,8 +103,9 @@ echo "vip1_v2" >> README.md
 echo "vip2_v1" >> README.md
 echo "vitamin_hd5000" >> README.md
 
+cp ${SCRIPTPATH}/image.sh .
 cp ${SCRIPTPATH}/submodule.sh .
-cp ${SCRIPTPATH}/prepare-for-oe.sh .
+cp "${SCRIPTPATH}/prepare-for-oe.sh ."
 cp ${SCRIPTPATH}/update.sh .
 echo -e "\nFINISHED - Your new repository $REPONAME is ready to use"
 
