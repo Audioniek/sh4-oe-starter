@@ -102,10 +102,15 @@ echo "ufs922" >> README.md
 echo "vip1_v2" >> README.md
 echo "vip2_v1" >> README.md
 echo "vitamin_hd5000" >> README.md
+echo "README.md" >> .gitignore
 
 cp ${SCRIPTPATH}/image.sh .
+echo "image.sh" >> .gitignore
 cp ${SCRIPTPATH}/submodule.sh .
-cp "${SCRIPTPATH}/prepare-for-oe.sh ."
+echo "submodule.sh" >> .gitignore
+cp "${SCRIPTPATH}/prepare-for-oe.sh" .
+echo "prepare-for-oe.sh" >> .gitignore
 cp ${SCRIPTPATH}/update.sh .
+echo "update.sh" >> .gitignore
 echo -e "\nFINISHED - Your new repository $REPONAME is ready to use"
 
