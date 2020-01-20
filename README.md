@@ -23,7 +23,7 @@ To set up your sh4-oe build environment, do the following:
 
    CAUTION: You must give the complete path, otherwise the build environment will be a subdirectory of directory X.
 
-   The temporary directory X is now no longer needed and you delete it.
+   The temporary directory X is now no longer needed and you can delete it.
    
 5. If not done yet in step 1, run the file Y/prepare-for-oe.sh with superuser rights. This will install all the necessary packages for your distribution.
 
