@@ -18,7 +18,7 @@ git clone --progress --quiet --branch develop https://github.com/OpenPLi/openpli
 cd $REPONAME
 
 echo "Removing non-SH4 submodules"
-metas='meta-amiko meta-edision meta-gi meta-miraclebox meta-qt5 meta-spycat meta-xpeedc meta-zgemma meta-axasuhd meta-formuler meta-gigablue meta-qviart meta-vuplus meta-xsarius.pli5 meta-dream meta-gfutures meta-sab meta-xp meta-xtrend'
+metas='meta-amiko meta-edision meta-gi meta-maxytec meta-miraclebox meta-octagon meta-qt5 meta-spycat meta-xpeedc meta-zgemma meta-axasuhd meta-formuler meta-gigablue meta-qviart meta-vuplus meta-xsarius.pli5 meta-gfutures meta-sab meta-xp meta-xtrend'
 for i in $metas;
 do
    git submodule --quiet deinit $i
