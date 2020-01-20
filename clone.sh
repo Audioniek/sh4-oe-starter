@@ -3,10 +3,10 @@
 REPONAME=$1
 
 if [ "$REPONAME"  == "" ]; then
-    read -p "Where should your build environment reside? (default: ~/sh4-oe): "
+    read -p "Where should your build environment reside? (default: sh4-oe): "
     REPONAME=$REPLY
     if [ "$REPONAME" == "" ]; then
-        REPONAME="~/sh4-oe"
+        REPONAME="sh4-oe"
     fi
 fi
 
