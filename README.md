@@ -13,7 +13,7 @@ To set up your sh4-oe build environment, do the following:
 2. Create a temporary directory. In the rest of this text, this directory will be named X.
 
 3. In directory X, open a terminal and clone this repository with the command:
-   'clone git://github.com/Audioniek/sh4-oe starter.git .'
+   'git clone https://github.com/Audioniek/sh4-oe-starter.git .'
    Note the period at the end.
 
 4. In directory X, clone the build environment with the command:
